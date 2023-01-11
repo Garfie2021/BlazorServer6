@@ -8,6 +8,8 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<button class="btn btn-primary" @onclick="Transaction1">Select from PostgreSQL</button>
+
 @code {
     private int currentCount = 0;
 
@@ -15,4 +17,25 @@
     {
         currentCount++;
     }
+
+    private void Transaction1()
+    {
+        try
+        {
+            var insert_m_table_a = new m_table_a()
+            {
+                id = 1,
+                code = "1",
+                value_string = "1",
+                value_date = DateTime.Now
+            };
+
+            SQL_m_table_a.Transaction1(insert_m_table_a);
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+    }
+
 }
