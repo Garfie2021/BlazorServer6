@@ -4,6 +4,7 @@ From .Net 6 Blazor Server, I created a sample that uses the Dapper+Npgsql NuGet 
 
 [Source code explanation page](https://blog.unikktle.com/blazor-server%e3%81%8b%e3%82%89-postgresql%e3%81%b8sql%e6%96%87%e3%82%92%e7%99%ba%e8%a1%8c%e3%81%99%e3%82%8b/)
 
+---
 
 ## Src_Dapper_PostgreSQL_Transaction/BlazorApp1
 Simple and fast DB transaction processing implemented with Blazor Server
