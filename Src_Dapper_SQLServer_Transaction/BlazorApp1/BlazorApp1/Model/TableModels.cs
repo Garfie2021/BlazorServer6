@@ -4,10 +4,10 @@ namespace BlazorApp1.Model
 {
     public class TableA
     {
-        public long Id;
-        public string Code;
-        public string? ValueString;
-        public DateTime? ValueDate;
+        public long Id { get; set; }
+        public string Code { get; set; }
+        public string? ValueString { get; set; }
+        public DateTime? ValueDate { get; set; }
     }
 
 }
