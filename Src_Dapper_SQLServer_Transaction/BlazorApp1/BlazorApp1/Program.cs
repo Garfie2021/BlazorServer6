@@ -1,8 +1,12 @@
 using BlazorApp1.Data;
+using BlazorApp1.Shared;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var configuration = builder.Configuration;
+SharedData.ConnectionString = configuration.GetSection("ConnectionStrings")["SQLServerDB"];
 
 // Add services to the container.
 builder.Services.AddRazorPages();
