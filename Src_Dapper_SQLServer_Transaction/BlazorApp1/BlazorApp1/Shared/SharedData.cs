@@ -3,7 +3,7 @@
     public static class SharedData
     {
         /// <summary>
-        /// PostgreSQL DB 接続文字列
+        /// SQLServer DB 接続文字列
         /// </summary>
         public static string ConnectionString;
 
