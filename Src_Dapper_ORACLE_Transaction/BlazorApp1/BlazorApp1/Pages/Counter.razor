@@ -8,6 +8,8 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<button class="btn btn-primary" @onclick="Transaction1">DB Transaction ORACLE</button>
+
 @code {
     private int currentCount = 0;
 
@@ -15,4 +17,25 @@
     {
         currentCount++;
     }
+
+    private void Transaction1()
+    {
+        try
+        {
+            var insertTABLE1 = new TABLE1()
+            {
+                ID = 1,
+                CODE = "1",
+                VALUE_STRING = "1",
+                VALUE_DATE = DateTime.Now
+            };
+
+            SQL_TABLE1.Transaction1(insertTABLE1);
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+    }
+
 }
