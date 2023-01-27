@@ -38,33 +38,11 @@ namespace BlazorApp1.SQL
 
         public static IEnumerable<TableA> Select(SqlConnection conn, SqlTransaction tran)
         {
-            const string sql =
-                " SELECT " +
-                "  Id, " +
-                "  Code, " +
-                "  ValueString, " +
-                "  ValueDate " +
-                " FROM " +
-                "  dbo.TableA ";
-
-            return conn.Query<TableA>(sql, null, tran);
+            return conn.Query<TableA>("spTableA_Select", null, tran, commandType: CommandType.StoredProcedure);
         }
 
         public static void Insert(SqlConnection conn, SqlTransaction tran, TableA _TableA)
         {
-            const string sql =
-                " INSERT INTO dbo.TableA( " +
-                "   Id,  " +
-                "   Code, " +
-                "   ValueString,  " +
-                "   ValueDate " +
-                " ) VALUES ( " +
-                "   @id,  " +
-                "   @code, " +
-                "   @valueString,  " +
-                "   @valueDate " +
-                " ); ";
-
             var sqlParam = new
             {
                 id = _TableA.Id,
@@ -73,7 +51,7 @@ namespace BlazorApp1.SQL
                 valueDate = _TableA.ValueDate
             };
 
-            conn.Execute(sql, sqlParam, tran);
+            conn.Execute("spTableA_Insert", sqlParam, tran, commandType: CommandType.StoredProcedure);
         }
     }
 
