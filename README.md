@@ -1,4 +1,4 @@
-## Src_Dapper_PostgreSQL/BlazorApp1
+## BlazorServer6/Src_Dapper_PostgreSQL/BlazorApp1
 Sample program that issues SQL statements from Blazor Server to PostgreSQL.
 From .Net 6 Blazor Server, I created a sample that uses the Dapper+Npgsql NuGet package to issue SQL statements to a PostgreSQL database.
 
@@ -7,7 +7,7 @@ From .Net 6 Blazor Server, I created a sample that uses the Dapper+Npgsql NuGet 
 
 ---
 
-## Src_Dapper_PostgreSQL_Transaction/BlazorApp1
+## BlazorServer6/Src_Dapper_PostgreSQL_Transaction/BlazorApp1
 Simple and fast DB transaction processing implemented with Blazor Server
 
 From .Net 6 Blazor Server, I created a sample that uses the Dapper+Npgsql NuGet package to issue SQL statements to a PostgreSQL database.
@@ -25,7 +25,7 @@ There is still someone who doesn't understand multithreading in C# and says "I'm
 
 ---
 
-## Src_Dapper_PostgreSQL_Transaction/BlazorApp1
+## BlazorServer6/Src_Dapper_PostgreSQL_Transaction/BlazorApp1
 
 From .Net 6.0 Blazor Server, I created a sample that uses the Dapper+Microsoft.Data.SqlClient NuGet package to perform DB transaction processing to a SQLServer database.
 
@@ -42,10 +42,9 @@ Microsoft.Data.SqlClient is recommended instead of System.Data.SqlClient for con
 [YouTube](https://youtu.be/UKs5qsJLqvg)
 [Source code explanation page](https://blog.unikktle.com/blazor-server%e3%81%a7%e5%ae%9f%e8%a3%85%e3%81%99%e3%82%8b%e3%82%b7%e3%83%b3%e3%83%97%e3%83%ab%e3%81%a7%e9%ab%98%e9%80%9f%e3%81%aadb%e3%83%88%e3%83%a9%e3%83%b3%e3%82%b6%e3%82%af%e3%82%b7%e3%83%a7-2/)
 
-
 ---
 
-## Src_Dapper_ORACLE_Transaction/BlazorApp1
+## BlazorServer6/Src_Dapper_ORACLE_Transaction/BlazorApp1
 
 From Blazor Server of .Net 6.0, using Dapper + Oracle.EntityFrameworkCore NuGet package, I created a sample that performs DB transaction processing to ORACLE database.
 
@@ -62,5 +61,15 @@ Unlike Oracle.ManagedDataAccess, Oracle.EntityFrameworkCore is convenient becaus
 [YouTube](https://youtu.be/yW5ueJsgpkw)
 [Source code explanation page](https://blog.unikktle.com/blazor-server%e3%81%a7%e5%ae%9f%e8%a3%85%e3%81%99%e3%82%8b%e3%82%b7%e3%83%b3%e3%83%97%e3%83%ab%e3%81%a7%e9%ab%98%e9%80%9f%e3%81%aadb%e3%83%88%e3%83%a9%e3%83%b3%e3%82%b6%e3%82%af%e3%82%b7%e3%83%a7-3/)
 
+---
+
+## BlazorServer6/Src_Dapper_SQLServer_Transaction_StoredProcedure/
+
+Simple and fast DB transaction processing (on SQLServer) implemented with Blazor Server and stored procedures.
+
+From .Net 6.0 Blazor Server, I created a sample that performs DB transaction processing when using the Dapper + Microsoft.Data.SqlClient NuGet package and using the SQLServer database stored procedure.
+
+[YouTube](https://youtu.be/8qXnmSjWOIg)
+[Source code explanation page](https://blog.unikktle.com/blazor-server%e3%81%a8%e3%82%b9%e3%83%88%e3%82%a2%e3%83%89%e3%83%97%e3%83%ad%e3%82%b7%e3%83%bc%e3%82%b8%e3%83%a3%e3%81%a7%e5%ae%9f%e8%a3%85%e3%81%99%e3%82%8b%e3%82%b7%e3%83%b3%e3%83%97%e3%83%ab/)
 
 ---
